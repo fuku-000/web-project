@@ -19,5 +19,5 @@ from webweb import views as webweb_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('blog.urls')),
+    path('', include('webweb.urls')),
 ]
