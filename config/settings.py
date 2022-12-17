@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'webweb',
     'rest_framework',
-   #'api.apps.ApiConfig'
+    #'api.apps.ApiConfig',
 ]
 
 REST_FRAMEWORK = {

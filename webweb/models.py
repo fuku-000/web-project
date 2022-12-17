@@ -3,7 +3,12 @@ from django.db import models
 # Create your models here.
 #適当なユーザーテーブルを追加
 
+class Test(models.Model):
+    column1 = models.CharField(max_length=10)
+    column2 = models.CharField(max_length=20)
+    
 class User_Models(models.Model):
+
 
     class Meta:
         db_table = 'User'
