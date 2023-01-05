@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from api import views
+from webweb import views as webweb_views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('webweb.urls')),
+    path('webweb', webweb_views.index),
     path('api/', include(views.router.urls))
 ]
