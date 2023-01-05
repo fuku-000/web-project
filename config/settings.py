@@ -39,8 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'webweb',
-    'rest_framework',
-    'api.apps.ApiConfig',
 ]
 
 REST_FRAMEWORK = {
