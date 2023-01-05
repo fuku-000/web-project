@@ -1,3 +1,4 @@
+
 from django.urls import path
 from . import views
  
@@ -7,3 +8,4 @@ urlpatterns = [
     path('create/', views.WebwebCreateView.as_view(), name='webweb_create'),
     path('complete/', views.WebwebCreateCompleteView.as_view(), name='webweb_create_complete'),
 ]
+

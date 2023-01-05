@@ -1,4 +1,5 @@
 from django.db import models
+
 from django.utils import timezone
 import uuid
  
@@ -9,3 +10,4 @@ class Webweb(models.Model):
     title = models.CharField(verbose_name='タイトル', max_length=40)
     text = models.CharField(verbose_name='本文', max_length=200)
     created_at = models.DateTimeField(verbose_name='作成日時', default=timezone.now)
+

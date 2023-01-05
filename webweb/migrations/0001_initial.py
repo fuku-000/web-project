@@ -14,6 +14,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
+
             name='Webweb',
             fields=[
                 ('id', models.UUIDField(default=uuid.uuid4, editable=False, primary_key=True, serialize=False)),
@@ -23,4 +24,5 @@ class Migration(migrations.Migration):
                 ('created_at', models.DateTimeField(default=django.utils.timezone.now, verbose_name='作成日時')),
             ],
         ),
+
     ]
