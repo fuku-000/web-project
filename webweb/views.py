@@ -18,3 +18,4 @@ class WebwebCreateView(CreateView):
 
 class WebwebCreateCompleteView(TemplateView):
     template_name = 'webweb_create_complete.html'
+
