@@ -1,3 +1,5 @@
+
+
 from django.shortcuts import render
 
 from django.views.generic import TemplateView
@@ -16,3 +18,4 @@ class WebwebCreateView(CreateView):
 
 class WebwebCreateCompleteView(TemplateView):
     template_name = 'webweb_create_complete.html'
+
