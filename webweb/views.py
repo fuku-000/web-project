@@ -1,15 +1,20 @@
+
+
 from django.shortcuts import render
-from django.http import HttpResponse
 
+from django.views.generic import TemplateView
+from django.urls import reverse_lazy
+from webweb.forms import WebwebForm
+from django.views.generic import CreateView
 
-# Create your views here.
+ 
+class IndexView(TemplateView):
+    template_name = 'index.html'
 
-def root(request):
-  return HttpResponse('Hello Django')
+class WebwebCreateView(CreateView):
+    template_name = 'webweb_create.html'
+    form_class = WebwebForm
+    success_url = reverse_lazy('webweb:webweb_create_complete')
 
-def index(request):
-  return render(request, '../templates/webweb/main/index.html')
-
-def home(request):
-  return render(request, '../templates/webweb/main/index.html')
-
+class WebwebCreateCompleteView(TemplateView):
+    template_name = 'webweb_create_complete.html'
